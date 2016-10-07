@@ -8,7 +8,7 @@ var todoCtrl = require('./todoCtrl');
 var app = express();
 
 app.use(cors());
-app.use(bodyParser.json());
+app.use(bodyParser.json()); 
 app.use(bodyParser.urlencoded());
 app.use(express.static(__dirname + '/public'));
 
